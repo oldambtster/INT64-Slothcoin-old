@@ -3,7 +3,7 @@ Slothcoin
 
 Technical Information
 
-+ SHA3 keccak encryption algorithm
++ SHA-3 keccak encryption algorithm
 + Difficulty retargeting using Kimoto Gravity Well, retargeting every 4 blocks
 + 60 second block times
 + 100 block maturity times
