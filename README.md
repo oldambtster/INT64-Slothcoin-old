@@ -11,7 +11,7 @@ Technical Information
 
 + Total amount of coins: 100,000,000,000 Coins
 + Block reward halving every 100,000 blocks
-+ 1-100,000 Blocks
++ 1-100,000 Blocks 
 + 500,000 Coins
 + 100,000-200,000 Blocks
 + 250,000 Coins
@@ -23,7 +23,6 @@ Technical Information
 + 33,750 Coins
 + 500,000-600,000
 + 16,875 Coins
-+ 60 second block times
 
 
 
