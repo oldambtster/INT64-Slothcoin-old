@@ -147,10 +147,10 @@ OBJS= \
     obj/keccak.o
 
 
-all: obj SlothCoind
+all: obj Slothcoind
 
-test check: test_SlothCoin FORCE
-	./test_SlothCoin
+test check: test_Slothcoin FORCE
+	./test_Slothcoin
 
 #
 # LevelDB support
@@ -192,7 +192,7 @@ obj:
 cryptopp/libcryptopp.a:
 	@$(MAKE) -C cryptopp static
 
-SlothCoind: $(OBJS:obj/%=obj/%)
+Slothcoind: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -204,11 +204,11 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_SlothCoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_Slothcoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(LINK) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ $(TESTLIBS) $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f SlothCoind test_SlothCoin
+	-rm -f Slothcoind test_Slothcoin
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P
