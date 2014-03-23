@@ -178,7 +178,7 @@ bool AppInit(int argc, char* argv[])
             std::string strUsage = _("SlothCoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  SlothCoind [options]                     " + "\n" +
-                  "  SlothCoind [options] <command> [params]  " + _("Send command to -server or maxcoind") + "\n" +
+                  "  SlothCoind [options] <command> [params]  " + _("Send command to -server or Slothcoind") + "\n" +
                   "  SlothCoind [options] help                " + _("List commands") + "\n" +
                   "  SlothCoind [options] help <command>      " + _("Get help for a command") + "\n";
 

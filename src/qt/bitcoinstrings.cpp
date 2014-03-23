@@ -109,7 +109,7 @@ QT_TRANSLATE_NOOP("SlothCoin-core", "Error initializing wallet database environm
 QT_TRANSLATE_NOOP("SlothCoin-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("SlothCoin-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("SlothCoin-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("SlothCoin-core", "Error loading wallet.dat: Wallet requires newer version of MaxCoin"),
+QT_TRANSLATE_NOOP("SlothCoin-core", "Error loading wallet.dat: Wallet requires newer version of Slothcoin"),
 QT_TRANSLATE_NOOP("SlothCoin-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("SlothCoin-core", "Error"),
 QT_TRANSLATE_NOOP("SlothCoin-core", "Error: Disk space is low!"),
