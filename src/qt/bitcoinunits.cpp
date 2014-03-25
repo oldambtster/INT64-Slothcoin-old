@@ -1,5 +1,6 @@
 #include "bitcoinunits.h"
 
+#include <QLocale>
 #include <QStringList>
 
 BitcoinUnits::BitcoinUnits(QObject *parent):
@@ -105,11 +106,23 @@ QString BitcoinUnits::format(int unit, qint64 n, bool fPlus)
         ++nTrim;
     remainder_str.chop(nTrim);
 
-    if (n < 0)
-        quotient_str.insert(0, '-');
-    else if (fPlus && n > 0)
-        quotient_str.insert(0, '+');
-    return quotient_str + QString(".") + remainder_str;
+	QString quotientString;
+
+//   if (n < 0)
+//        quotient_str.insert(0, '-');
+//   else if (fPlus && n > 0)
+//        quotient_str.insert(0, '+');
+//    return quotient_str + QString(".") + remainder_str;
+
+    if (n < 0) {
+        quotient = -quotient;
+    }
+    else if ( n > 0 && fPlus ) {
+        quotientString += "+";
+    }
+
+    QLocale local;
+    return quotientString + local.toString(quotient) + local.decimalPoint() + remainder_str;
 }
 
 QString BitcoinUnits::formatWithUnit(int unit, qint64 amount, bool plussign)
