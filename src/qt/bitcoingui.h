@@ -11,7 +11,6 @@ class WalletView;
 class ClientModel;
 class WalletModel;
 class WalletStack;
-class MiningPage;
 class TransactionView;
 class OverviewPage;
 class AddressBookPage;
@@ -68,7 +67,6 @@ public:
     QAction * getAddressBookAction() { return addressBookAction; }
     QAction * getReceiveCoinsAction() { return receiveCoinsAction; }
     QAction * getSendCoinsAction() { return sendCoinsAction; }
-    QAction * getMiningAction() { return miningAction; }
 
 protected:
     void changeEvent(QEvent *e);
@@ -84,13 +82,11 @@ private:
     QLabel *labelEncryptionIcon;
     QLabel *labelConnectionsIcon;
     QLabel *labelBlocksIcon;
-    QLabel *labelMiningIcon;
     QLabel *progressBarLabel;
     QProgressBar *progressBar;
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
-    QAction *miningAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
@@ -138,8 +134,6 @@ public slots:
     void setNumBlocks(int count, int nTotalBlocks);
     /** Set number of blocks shown in the UI */
     //void setNumBlocks(int count);
-    /** Set mining status and hashrate in the UI */
-    void setMining(bool mining, int hashrate);
     /** Set the encryption status as shown in the UI.
        @param[in] status            current encryption status
        @see WalletModel::EncryptionStatus
@@ -171,8 +165,6 @@ public slots:
 private slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
-    /** Switch to mining page */
-    void gotoMiningPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */

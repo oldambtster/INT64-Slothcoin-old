@@ -54,9 +54,9 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64 CTransaction::nMinTxFee = 50;  // Override with -mintxfee
+int64 CTransaction::nMinTxFee = 100000000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-int64 CTransaction::nMinRelayTxFee = 50;
+int64 CTransaction::nMinRelayTxFee = 100000000;
 
 CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -616,7 +616,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
         {
             // Transactions under 100 are free
             // (about 1500 Sloth if made of 50 Sloth inputs)
-            if (nBytes < 100)
+            if (nBytes < 1000)
                 nMinFee = 0;
         }
         else
@@ -1079,7 +1079,7 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
 {
-    int64 nSubsidy = 10000 * COIN;
+    int64 nSubsidy = 0 * COIN;
 	
 	if(nHeight < 5)
 	{
