@@ -35,11 +35,11 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (     0, uint256("00000000036e090ea04f4871f0fe54aee193978157a079e026278f52b385f447"))
+        (     10001, uint256("000000000000f2417d7b7a20ca8241abe79166f8aaf37f278e50e948457b388a"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1047180179, // * UNIX timestamp of last checkpoint block
+        1358555382, // * UNIX timestamp of last checkpoint block
         614,     // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         60000.0     // * estimated number of transactions per day after checkpoint
@@ -73,8 +73,7 @@ namespace Checkpoints
 
         MapCheckpoints::const_iterator i = checkpoints.find(nHeight);
         if (i == checkpoints.end()) return true;
-//        return hash == i->second;
-		return true;
+		return hash == i->second;
 	}
 
     // Guess how far we are in the verification process at the given block index
@@ -115,8 +114,8 @@ namespace Checkpoints
 
         const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
 
-       // return checkpoints.rbegin()->first;
-		return 0;
+        return checkpoints.rbegin()->first;
+		//return 0;
     }
 
     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
@@ -131,8 +130,8 @@ namespace Checkpoints
             const uint256& hash = i.second;
             std::map<uint256, CBlockIndex*>::const_iterator t = mapBlockIndex.find(hash);
             if (t != mapBlockIndex.end())
-                //return t->second;
-                return NULL;
+                return t->second;
+               // return NULL;
 				}
         return NULL;
     }
