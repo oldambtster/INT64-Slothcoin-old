@@ -1178,8 +1178,8 @@ unsigned int static GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const 
         retargetTimespan = nTargetTimespan_New;
 		retargetSpacing = nTargetSpacing_New;
 		retargetInterval = nTargetTimespan_New / nTargetSpacing_New;
-    }	
-	
+    }
+
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
@@ -1223,10 +1223,20 @@ unsigned int static GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const 
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     //printf(" nActualTimespan = %"PRI64d" before bounds\n", nActualTimespan);
 
+    if(pindexLast->nHeight+1 >=	 22000) 
+    {
+		// amplitude filter - thanks to daft27 for this code
+        nActualTimespan = retargetTimespan + (nActualTimespan - retargetTimespan)/8;
+        printf("DIGISHIELD RETARGET\n");
+        if (nActualTimespan < (retargetTimespan - (retargetTimespan/4)) ) nActualTimespan = (retargetTimespan - (retargetTimespan/4));
+        if (nActualTimespan > (retargetTimespan + (retargetTimespan/2)) ) nActualTimespan = (retargetTimespan + (retargetTimespan/2));
+    }
+    else if (pindexLast->nHeight+1 < 22000) {
 	if (nActualTimespan < retargetTimespan/4)
 	nActualTimespan = retargetTimespan/4;
 	if (nActualTimespan > retargetTimespan*4)
 	nActualTimespan = retargetTimespan*4;
+	}
 		
 	// Retarget
 	CBigNum bnNew;
@@ -1332,8 +1342,8 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         }
         else {
                 if (pindexLast->nHeight+1 >= 200) { DiffMode = 2; }
+				else if (pindexLast->nHeight+1 >= 22000) { DiffMode = 1; }
         }
-        
         if (DiffMode == 1) { return GetNextWorkRequired_V1(pindexLast, pblock); }
         else if (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); }
         return GetNextWorkRequired_V2(pindexLast, pblock);
