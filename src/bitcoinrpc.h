@@ -30,7 +30,7 @@ enum HTTPStatusCode
     HTTP_INTERNAL_SERVER_ERROR = 500,
 };
 
-// SlothCoin RPC error codes
+// Slothcoin RPC error codes
 enum RPCErrorCode
 {
     // Standard JSON-RPC 2.0 errors
@@ -51,7 +51,7 @@ enum RPCErrorCode
     RPC_DESERIALIZATION_ERROR       = -22, // Error parsing or validating structure in raw format
 
     // P2P client errors
-    RPC_CLIENT_NOT_CONNECTED        = -9,  // SlothCoin is not connected
+    RPC_CLIENT_NOT_CONNECTED        = -9,  // Slothcoin is not connected
     RPC_CLIENT_IN_INITIAL_DOWNLOAD  = -10, // Still downloading initial blocks
 
     // Wallet errors
@@ -101,7 +101,7 @@ public:
 };
 
 /*
-  SlothCoin RPC command dispatcher.
+  Slothcoin RPC command dispatcher.
  */
 class CRPCTable
 {

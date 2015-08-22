@@ -84,8 +84,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no SlothCoin URI
-    if(!uri.isValid() || uri.scheme() != QString("SlothCoin"))
+    // return if URI is not valid or is no Slothcoin URI
+    if(!uri.isValid() || uri.scheme() != QString("Slothcoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -137,13 +137,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert SlothCoin:// to SlothCoin:
+    // Convert Slothcoin:// to Slothcoin:
     //
-    //    Cannot handle this later, because SlothCoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because Slothcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("SlothCoin://"))
+    if(uri.startsWith("Slothcoin://"))
     {
-        uri.replace(0, 10, "SlothCoin:");
+        uri.replace(0, 10, "Slothcoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -298,12 +298,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "SlothCoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Slothcoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for SlothCoin.lnk
+    // check for Slothcoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -380,7 +380,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "SlothCoin.desktop";
+    return GetAutostartDir() / "Slothcoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -418,10 +418,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a SlothCoin.desktop file to the autostart directory:
+        // Write a Slothcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=SlothCoin\n";
+        optionFile << "Name=Slothcoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -442,10 +442,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("SlothCoin-Qt") + " " + tr("version") + " " +
+    header = tr("Slothcoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  SlothCoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  Slothcoin-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -454,7 +454,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("SlothCoin-Qt"));
+    setWindowTitle(tr("Slothcoin-Qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));

@@ -24,13 +24,13 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter a SlothCoin address (e.g. SPf1FRfmnpKSWA6bNZ6pV9mt8mCeyL2STQ)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter a Slothcoin address (e.g. SPf1FRfmnpKSWA6bNZ6pV9mt8mCeyL2STQ)"));
     ui->pubkeyOut_VM->setPlaceholderText(tr("Click \"Sign Message\" to view public key"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
-    ui->addressIn_VM->setPlaceholderText(tr("Enter a SlothCoin address (e.g. SA4FztWbWTJUD5CWXdfUQDocLSRjdBxwmA)"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a Slothcoin address (e.g. SA4FztWbWTJUD5CWXdfUQDocLSRjdBxwmA)"));
     ui->pubkeyIn_VM->setPlaceholderText(tr("Enter the public key used for signing"));
-    ui->signatureIn_VM->setPlaceholderText(tr("Enter SlothCoin signature"));
+    ui->signatureIn_VM->setPlaceholderText(tr("Enter Slothcoin signature"));
 #endif
 
     GUIUtil::setupAddressWidget(ui->addressIn_SM, this);

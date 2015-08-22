@@ -20,7 +20,7 @@ enum BlockSource {
     BLOCK_SOURCE_NETWORK
 };
 
-/** Model for SlothCoin network client. */
+/** Model for Slothcoin network client. */
 class ClientModel : public QObject
 {
     Q_OBJECT

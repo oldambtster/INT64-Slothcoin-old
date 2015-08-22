@@ -1,0 +1,4 @@
+obj/version.o: version.cpp version.h clientversion.h \
+ /home/oaldamster/0a_projects/Slothcoin/Slothcoin_master/src/obj/build.h
+version.cpp version.h clientversion.h :
+ /home/oaldamster/0a_projects/Slothcoin/Slothcoin_master/src/obj/build.h :

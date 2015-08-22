@@ -47,7 +47,7 @@ void QRCodeDialog::setModel(OptionsModel *model)
     if (model)
         connect(model, SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
 
-    // update the display unit, to not use the default ("SlothCoin")
+    // update the display unit, to not use the default ("Slothcoin")
     updateDisplayUnit();
 }
 
@@ -95,8 +95,8 @@ QString QRCodeDialog::getURI()
     {
         if (ui->lnReqAmount->validate())
         {
-            // even if we allow a non SlothCoin unit input in lnReqAmount, we generate the URI with SlothCoin as unit (as defined in BIP21)
-            ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::SlothCoin, ui->lnReqAmount->value()));
+            // even if we allow a non Slothcoin unit input in lnReqAmount, we generate the URI with Slothcoin as unit (as defined in BIP21)
+            ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BTC, ui->lnReqAmount->value()));
             paramCount++;
         }
         else

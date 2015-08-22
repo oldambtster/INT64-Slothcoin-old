@@ -111,7 +111,7 @@ protected:
     bool fSet;
     bool fCompressedPubKey;
 
-    // SlothCoin
+    // Slothcoin
     bool secretKeySet;
     bool publicKeySet;
 

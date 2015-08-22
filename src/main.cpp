@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
+// Copyright (c) 2008-2009 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dr Kimoto Chan
 // Copyright (c) 2013-2014 Franko collective
 // Copyright (c) 2013-2014 Blakecoin developers
-// Copyright (c) 2014 The SlothCoin developers
+// Copyright (c) 2014-2015 The Slothcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -68,7 +68,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
-const string strMessageMagic = "SlothCoin Signed Message:\n";
+const string strMessageMagic = "Slothcoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -1101,32 +1101,62 @@ int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
     {
         nSubsidy = 125000 * COIN;
     }
-    else if(nHeight < 400000)
+// 20150821 1110 CET Oldambtster: changed award system @300K to fit int64 limit.
+    else if(nHeight < 300100)
     {
-        nSubsidy = 62500 * COIN;
-    }
-    else if(nHeight < 500000)
+            nSubsidy = 1000000 * COIN;
+        }
+    else if(nHeight < 300300)
     {
-        nSubsidy = 31250 * COIN;
-    }
-    else if(nHeight < 600000)
+            nSubsidy = 500000 * COIN;
+        }
+    else if(nHeight < 300700)
     {
-        nSubsidy = 15625 * COIN;
-    }
+            nSubsidy = 250000 * COIN;
+        }
+    else if(nHeight < 301500)
+    {
+            nSubsidy = 125000 * COIN;
+        }
+    else if(nHeight < 303100)
+    {
+            nSubsidy = 62500 * COIN;
+        }
+    else if(nHeight < 304100)
+    {
+            nSubsidy = 31250 * COIN;
+        }
+    else if(nHeight < 304600)
+    {
+            nSubsidy = 10000 * COIN;
+        }
+    else if(nHeight < 305000)
+    {
+            nSubsidy = 5000 * COIN;
+        }
+    else if(nHeight < 1229765)
+    {
+            nSubsidy = 4321 * COIN;
+        }
+    else if(nHeight < 1230567)
+    {
+            nSubsidy = 1 * COIN;
+        }
 
     return nSubsidy + nFees;
 }
 
 // Forking from 60 seconds blocktime to 150 seconds
 // Difficulty retargeting be every 2 blocks or 5 minutes
-
+// 20150821 1112 CET Oldambtster: _Fork added for 300K
 static const int64 Target_Time_Switch = 10000; 
-
+static const int64 Target_Time_Switch_Fork = 300000;
 static const int64 nTargetTimespan = 4 * 60; // Old difficulty retarget time: 4 minutes seconds
 static const int64 nTargetTimespan_New = 5 * 60; // New difficulty retarget time: 5 minutes
-
+static const int64 nTargetTimespan_Fork = 150; // Fork difficulty retarget time: 2.5 minutes
 static const int64 nTargetSpacing = 60; // Old target time for a block: 60 seconds
 static const int64 nTargetSpacing_New = 150; //New target time for a block: 150 seconds
+static const int64 nTargetSpacing_Fork = 150; //Fork target time for a block: 150 seconds
 
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
@@ -1178,6 +1208,12 @@ unsigned int static GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const 
         retargetTimespan = nTargetTimespan_New;
 		retargetSpacing = nTargetSpacing_New;
 		retargetInterval = nTargetTimespan_New / nTargetSpacing_New;
+    } else if (nHeight >= Target_Time_Switch_Fork)
+    {
+     // 20150821 1115 CET Oldambtster: Fork 300K retarget diff every block.
+        retargetTimespan = nTargetTimespan_Fork;
+        retargetSpacing = nTargetSpacing_Fork;
+        retargetInterval = nTargetTimespan_Fork / nTargetSpacing_Fork;
     }
 
     // Genesis block
@@ -1251,7 +1287,7 @@ unsigned int static GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const 
 }
 
 unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader *pblock, uint64 TargetBlocksSpacingSeconds, uint64 PastBlocksMin, uint64 PastBlocksMax) {
-        /* current difficulty formula, SlothCoin - kimoto gravity well */
+        /* current difficulty formula, Slothcoin - kimoto gravity well */
         const CBlockIndex *BlockLastSolved = pindexLast;
         const CBlockIndex *BlockReading = pindexLast;
         const CBlockHeader *BlockCreating = pblock;
@@ -4708,7 +4744,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("SlothCoinMiner:\n");
+    printf("SlothcoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4717,7 +4753,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("SlothCoinMiner : generated block is stale");
+            return error("SlothcoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4731,7 +4767,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("SlothCoinMiner : ProcessBlock, block not accepted");
+            return error("SlothcoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
@@ -4739,9 +4775,9 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    printf("SlothCoinMiner started\n");
+    printf("SlothcoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("SlothCoin-miner");
+    RenameThread("Slothcoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4763,7 +4799,7 @@ void static BitcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running SlothCoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running SlothcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4866,7 +4902,7 @@ void static BitcoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("SlothCoinMiner terminated\n");
+        printf("SlothcoinMiner terminated\n");
         throw;
     }
 }

@@ -1,5 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="da" version="2.0">
-<defaultcodec>UTF-8</defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="da">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -8,9 +9,43 @@
         <translation>Om Slothcoin</translation>
     </message>
     <message>
-        <location line="+39"/>
         <source>&lt;b&gt;Slothcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Slothcoin&lt;/b&gt; version</translation>
+        <translation type="vanished">&lt;b&gt;Slothcoin&lt;/b&gt; version</translation>
+    </message>
+    <message>
+        <source>
+This is experimental software.
+
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
+        <translation type="vanished">
+Dette program er ekperimentielt.
+
+Det er gjort tilgængeligt under MIT/X11-softwarelicensen. Se den tilhørende fil &quot;COPYING&quot; eller http://www.opensource.org/licenses/mit-license.php.
+
+Produktet indeholder software som er udviklet af OpenSSL Project til brug i OpenSSL Toolkit (http://www.openssl.org/), kryptografisk software skrevet af Eric Young (eay@cryptsoft.com) og UPnP-software skrevet af Thomas Bernard.</translation>
+    </message>
+    <message>
+        <location filename="../aboutdialog.cpp" line="+15"/>
+        <location line="+1"/>
+        <source>Copyright</source>
+        <translation>Copyright</translation>
+    </message>
+    <message>
+        <location line="-1"/>
+        <source>The Bitcoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The Slothcoin developers</source>
+        <translation type="unfinished">Slothcoin-udviklerne</translation>
+    </message>
+    <message>
+        <location filename="../forms/aboutdialog.ui" line="+39"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Slothcoin&lt;/span&gt; version&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+57"/>
@@ -19,23 +54,8 @@ This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Dette program er ekperimentielt.
-
-Det er gjort tilgængeligt under MIT/X11-softwarelicensen. Se den tilhørende fil &quot;COPYING&quot; eller http://www.opensource.org/licenses/mit-license.php.
-
-Produktet indeholder software som er udviklet af OpenSSL Project til brug i OpenSSL Toolkit (http://www.openssl.org/), kryptografisk software skrevet af Eric Young (eay@cryptsoft.com) og UPnP-software skrevet af Thomas Bernard.</translation>
-    </message>
-    <message>
-        <location filename="../aboutdialog.cpp" line="+14"/>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>The Slothcoin developers</source>
-        <translation>Slothcoin-udviklerne</translation>
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard, and sphlib by Thomas Pornin. This product also includes software developed by Crypto++ which is released under the Boost Software License 1.0.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -61,7 +81,12 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Kopier den valgte adresse til systemets udklipsholder</translation>
     </message>
     <message>
-        <location line="-11"/>
+        <location line="+25"/>
+        <source>Sign a message to prove you own a Slothcoin address</source>
+        <translation type="unfinished">Underskriv en besked for at bevise, at en Slothcoin-adresse tilhører dig</translation>
+    </message>
+    <message>
+        <location line="-36"/>
         <source>&amp;New Address</source>
         <translation>Ny adresse</translation>
     </message>
@@ -81,17 +106,17 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Vis QR-kode</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>Sign a message to prove you own a Slothcoin address</source>
-        <translation>Underskriv en besked for at bevise, at en Slothcoin-adresse tilhører dig</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+14"/>
         <source>Sign &amp;Message</source>
         <translation>Underskriv besked</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+11"/>
+        <source>Verify a message to ensure it was signed with a specified Slothcoin address</source>
+        <translation type="unfinished">Efterprøv en besked for at sikre, at den er underskrevet med den angivne Slothcoin-adresse</translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Delete the currently selected address from the list</source>
         <translation>Slet den markerede adresse fra listen</translation>
     </message>
@@ -106,12 +131,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Eksporter</translation>
     </message>
     <message>
-        <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Slothcoin address</source>
-        <translation>Efterprøv en besked for at sikre, at den er underskrevet med den angivne Slothcoin-adresse</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="-41"/>
         <source>&amp;Verify Message</source>
         <translation>Efterprøv besked</translation>
     </message>
@@ -141,7 +161,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Send bitcoins</translation>
     </message>
     <message>
-        <location line="+260"/>
+        <location line="+265"/>
         <source>Export Address Book Data</source>
         <translation>Eksporter adressebogsdata</translation>
     </message>
@@ -247,17 +267,26 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Bekræft tegnebogskryptering</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE BITCOINS&lt;/b&gt;!</translation>
+        <translation type="vanished">Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE BITCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+1"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Er du sikker på, at du ønsker at kryptere din tegnebog?</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+0"/>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SlothcoinS&lt;/b&gt;!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Slothcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Slothcoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>VIGTIGT: Enhver tidligere sikkerhedskopi, som du har lavet af tegnebogsfilen, bør blive erstattet af den nyligt genererede, krypterede tegnebogsfil. Af sikkerhedsmæssige årsager vil tidligere sikkerhedskopier af den ikke-krypterede tegnebogsfil blive ubrugelig i det øjeblik, du starter med at anvende den nye, krypterede tegnebog.</translation>
     </message>
@@ -274,12 +303,11 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Tegnebog krypteret</translation>
     </message>
     <message>
-        <location line="-56"/>
         <source>Slothcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Slothcoin vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine bitcoins fuldt ud mod at blive stjålet af malware på din computer.</translation>
+        <translation type="vanished">Slothcoin vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine bitcoins fuldt ud mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-43"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -323,7 +351,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+233"/>
+        <location filename="../bitcoingui.cpp" line="+237"/>
         <source>Sign &amp;message...</source>
         <translation>Underskriv besked...</translation>
     </message>
@@ -453,18 +481,18 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Efterprøv besked...</translation>
     </message>
     <message>
-        <location line="-165"/>
-        <location line="+530"/>
+        <location line="-166"/>
+        <location line="+531"/>
         <source>Slothcoin</source>
         <translation>Slothcoin</translation>
     </message>
     <message>
-        <location line="-530"/>
+        <location line="-531"/>
         <source>Wallet</source>
         <translation>Tegnebog</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location line="+102"/>
         <source>&amp;Send</source>
         <translation>Send</translation>
     </message>
@@ -542,7 +570,10 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to Slothcoin network</source>
-        <translation><numerusform>%n aktiv(e) forbindelse(r) til Slothcoin-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til Slothcoin-netværket</numerusform></translation>
+        <translation>
+            <numerusform>%n aktiv(e) forbindelse(r) til Slothcoin-netværket</numerusform>
+            <numerusform>%n aktiv(e) forbindelse(r) til Slothcoin-netværket</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+22"/>
@@ -562,17 +593,26 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n time(r)</numerusform><numerusform>%n time(r)</numerusform></translation>
+        <translation>
+            <numerusform>%n time(r)</numerusform>
+            <numerusform>%n time(r)</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n dag(e)</numerusform><numerusform>%n dag(e)</numerusform></translation>
+        <translation>
+            <numerusform>%n dag(e)</numerusform>
+            <numerusform>%n dag(e)</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation><numerusform>%n uge(r)</numerusform><numerusform>%n uge(r)</numerusform></translation>
+        <translation>
+            <numerusform>%n uge(r)</numerusform>
+            <numerusform>%n uge(r)</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -605,12 +645,12 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Information</translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+69"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation>Transaktionen overskrider størrelsesgrænsen. Du kan stadig sende den for et gebyr på %1, hvilket går til de knuder, der behandler din transaktion og hjælper med at understøtte netværket. Vil du betale gebyret?</translation>
     </message>
     <message>
-        <location line="-140"/>
+        <location line="-139"/>
         <source>Up to date</source>
         <translation>Opdateret</translation>
     </message>
@@ -620,7 +660,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Indhenter...</translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+112"/>
         <source>Confirm transaction fee</source>
         <translation>Bekræft transaktionsgebyr</translation>
     </message>
@@ -657,7 +697,7 @@ Adresse: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid Slothcoin address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig Slothcoin-adresse eller misdannede URI-parametre.</translation>
+        <translation type="unfinished">URI kan ikke fortolkes! Dette kan skyldes en ugyldig Slothcoin-adresse eller misdannede URI-parametre.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,7 +710,7 @@ Adresse: %4
         <translation>Tegnebog er &lt;b&gt;krypteret&lt;/b&gt; og i øjeblikket &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+111"/>
+        <location filename="../bitcoin.cpp" line="+114"/>
         <source>A fatal error occurred. Slothcoin can no longer continue safely and will quit.</source>
         <translation>Der opstod en fatal fejl. Slothcoin kan ikke længere fortsætte sikkert og vil afslutte.</translation>
     </message>
@@ -678,7 +718,7 @@ Adresse: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+104"/>
+        <location filename="../clientmodel.cpp" line="+105"/>
         <source>Network Alert</source>
         <translation>Netværksadvarsel</translation>
     </message>
@@ -731,17 +771,17 @@ Adresse: %4
         <translation>Rediger afsendelsesadresse</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+71"/>
+        <source>The entered address &quot;%1&quot; is not a valid Slothcoin address.</source>
+        <translation type="unfinished">Den indtastede adresse &quot;%1&quot; er ikke en gyldig Slothcoin-adresse.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Den indtastede adresse &quot;%1&quot; er allerede i adressebogen.</translation>
     </message>
     <message>
-        <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Slothcoin address.</source>
-        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig Slothcoin-adresse.</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+5"/>
         <source>Could not unlock wallet.</source>
         <translation>Kunne ikke låse tegnebog op.</translation>
     </message>
@@ -754,7 +794,7 @@ Adresse: %4
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+445"/>
         <location line="+12"/>
         <source>Slothcoin-Qt</source>
         <translation>Slothcoin-Qt</translation>
@@ -930,10 +970,15 @@ Adresse: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Slothcoin.</source>
-        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når Slothcoin genstartes.</translation>
+        <translation type="unfinished">Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når Slothcoin genstartes.</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+33"/>
+        <source>Whether to show Slothcoin addresses in the transaction list or not.</source>
+        <translation type="unfinished">Afgør hvorvidt Slothcoin-adresser skal vises i transaktionslisten eller ej.</translation>
+    </message>
+    <message>
+        <location line="-22"/>
         <source>&amp;Unit to show amounts in:</source>
         <translation>Enhed at vise beløb i:</translation>
     </message>
@@ -943,12 +988,7 @@ Adresse: %4
         <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af bitcoins.</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Whether to show Slothcoin addresses in the transaction list or not.</source>
-        <translation>Afgør hvorvidt Slothcoin-adresser skal vises i transaktionslisten eller ej.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+12"/>
         <source>&amp;Display addresses in transaction list</source>
         <translation>Vis adresser i transaktionsliste</translation>
     </message>
@@ -997,7 +1037,7 @@ Adresse: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Slothcoin.</source>
-        <translation>Denne indstilling træder i kraft, efter Slothcoin genstartes.</translation>
+        <translation type="unfinished">Denne indstilling træder i kraft, efter Slothcoin genstartes.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1013,13 +1053,11 @@ Adresse: %4
         <translation>Formular</translation>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Slothcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Slothcoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
+        <translation type="vanished">Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Slothcoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
     </message>
     <message>
-        <location line="-124"/>
+        <location line="+92"/>
         <source>Balance:</source>
         <translation>Saldo:</translation>
     </message>
@@ -1034,7 +1072,13 @@ Adresse: %4
         <translation>Tegnebog</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+7"/>
+        <location line="+192"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-92"/>
         <source>Immature:</source>
         <translation>Umodne:</translation>
     </message>
@@ -1044,12 +1088,12 @@ Adresse: %4
         <translation>Udvunden saldo, som endnu ikke er modnet</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+72"/>
         <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
         <translation>&lt;b&gt;Nyeste transaktioner&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-127"/>
         <source>Your current balance</source>
         <translation>Din nuværende saldo</translation>
     </message>
@@ -1068,9 +1112,13 @@ Adresse: %4
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Kan ikke starte bitcoin: click-to-pay-håndtering</translation>
+        <translation type="vanished">Kan ikke starte bitcoin: click-to-pay-håndtering</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="+110"/>
+        <source>Cannot start Slothcoin: click-to-pay handler</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1101,12 +1149,12 @@ Adresse: %4
         <translation>Besked:</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+90"/>
         <source>&amp;Save As...</source>
         <translation>Gem som...</translation>
     </message>
     <message>
-        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <location filename="../qrcodedialog.cpp" line="+65"/>
         <source>Error encoding URI into QR Code.</source>
         <translation>Fejl ved kodning fra URI til QR-kode</translation>
     </message>
@@ -1148,7 +1196,7 @@ Adresse: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+339"/>
+        <location filename="../rpcconsole.cpp" line="+342"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
@@ -1163,7 +1211,17 @@ Adresse: %4
         <translation>Information</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="-10"/>
+        <source>Slothcoin - Debug window</source>
+        <translation type="unfinished">Slothcoin - Fejlsøgningsvindue</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Slothcoin Core</source>
+        <translation type="unfinished">Slothcoin Core</translation>
+    </message>
+    <message>
+        <location line="+53"/>
         <source>Using OpenSSL version</source>
         <translation>Anvendt OpenSSL-version</translation>
     </message>
@@ -1208,7 +1266,12 @@ Adresse: %4
         <translation>Tidsstempel for seneste blok</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+49"/>
+        <source>Open the Slothcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation type="unfinished">Åbn Slothcoin-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>&amp;Open</source>
         <translation>Åbn</translation>
     </message>
@@ -1219,8 +1282,12 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
+        <source>Show the Slothcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show the Slothcoin-Qt help message to get a list with possible Slothcoin command-line options.</source>
-        <translation>Vis Slothcoin-Qt-hjælpebeskeden for at få en liste over de tilgængelige Slothcoin-kommandolinjeindstillinger.</translation>
+        <translation type="vanished">Vis Slothcoin-Qt-hjælpebeskeden for at få en liste over de tilgængelige Slothcoin-kommandolinjeindstillinger.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1238,27 +1305,12 @@ Adresse: %4
         <translation>Byggedato</translation>
     </message>
     <message>
-        <location line="-104"/>
-        <source>Slothcoin - Debug window</source>
-        <translation>Slothcoin - Fejlsøgningsvindue</translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Slothcoin Core</source>
-        <translation>Slothcoin Core</translation>
-    </message>
-    <message>
-        <location line="+279"/>
+        <location line="+200"/>
         <source>Debug log file</source>
         <translation>Fejlsøgningslogfil</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Open the Slothcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Slothcoin-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
-    </message>
-    <message>
-        <location line="+102"/>
+        <location line="+109"/>
         <source>Clear console</source>
         <translation>Ryd konsol</translation>
     </message>
@@ -1282,7 +1334,7 @@ Adresse: %4
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+124"/>
+        <location filename="../sendcoinsdialog.cpp" line="+128"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+5"/>
@@ -1319,8 +1371,12 @@ Adresse: %4
     </message>
     <message>
         <location line="+10"/>
+        <source>123.456 Slothcoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>123.456 BTC</source>
-        <translation>123,456 BTC</translation>
+        <translation type="vanished">123,456 BTC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1333,12 +1389,13 @@ Adresse: %4
         <translation>Afsend</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-59"/>
+        <location filename="../sendcoinsdialog.cpp" line="-62"/>
+        <location line="+2"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; til %2 (%3)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Confirm send coins</source>
         <translation>Bekræft afsendelse af bitcoins</translation>
     </message>
@@ -1447,9 +1504,13 @@ Adresse: %4
         <translation>Fjern denne modtager</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Slothcoin address (e.g. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</source>
-        <translation>Indtast en Slothcoin-adresse (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
+        <translation type="vanished">Indtast en Slothcoin-adresse (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a Slothcoin address (e.g. SDf5FRfmnpKSWA656NZ6pV9mt8KanKaHSTQ)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1470,9 +1531,13 @@ Adresse: %4
         <translation>Du kan underskrive beskeder med dine Slothcoin-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
     </message>
     <message>
-        <location line="+18"/>
         <source>The address to sign the message with (e.g. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</source>
-        <translation>Slothcoin-adressen som beskeden skal underskrives med (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
+        <translation type="vanished">Slothcoin-adressen som beskeden skal underskrives med (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>The address to sign the message with (e.g. mNS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1503,21 +1568,36 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Signature</source>
-        <translation>Underskrift</translation>
+        <location line="+189"/>
+        <source>The public key used to sign the message</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="-141"/>
+        <source>Sign the message to prove you own this Slothcoin address</source>
+        <translation type="unfinished">Underskriv denne besked for at bevise, at Slothcoin-adressen tilhører dig</translation>
+    </message>
+    <message>
+        <location line="+106"/>
+        <source>The address the message was signed with (e.g. mNS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Verify the message to ensure it was signed with the specified Slothcoin address</source>
+        <translation type="unfinished">Efterprøv beskeden for at sikre, at den er underskrevet med den angivne Slothcoin-adresse</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation type="vanished">Underskrift</translation>
+    </message>
+    <message>
+        <location line="-177"/>
         <source>Copy the current signature to the system clipboard</source>
         <translation>Kopier den nuværende underskrift til systemets udklipsholder</translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Sign the message to prove you own this Slothcoin address</source>
-        <translation>Underskriv denne besked for at bevise, at Slothcoin-adressen tilhører dig</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+24"/>
         <source>Sign &amp;Message</source>
         <translation>Underskriv besked</translation>
     </message>
@@ -1528,12 +1608,12 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <location line="+146"/>
+        <location line="+156"/>
         <source>Clear &amp;All</source>
         <translation>Ryd alle</translation>
     </message>
     <message>
-        <location line="-87"/>
+        <location line="-97"/>
         <source>&amp;Verify Message</source>
         <translation>Efterprøv besked</translation>
     </message>
@@ -1543,17 +1623,11 @@ Adresse: %4
         <translation>Indtast den underskrevne adresse, beskeden (inkluder linjeskift, mellemrum mv. nøjagtigt, som de fremgår) og underskriften for at efterprøve beskeden. Vær forsigtig med ikke at lægge mere i underskriften end besked selv, så du undgår at blive narret af et man-in-the-middle-angreb.</translation>
     </message>
     <message>
-        <location line="+21"/>
         <source>The address the message was signed with (e.g. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</source>
-        <translation>Slothcoin-adressen som beskeden er underskrevet med (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
+        <translation type="vanished">Slothcoin-adressen som beskeden er underskrevet med (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
     </message>
     <message>
-        <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Slothcoin address</source>
-        <translation>Efterprøv beskeden for at sikre, at den er underskrevet med den angivne Slothcoin-adresse</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+74"/>
         <source>Verify &amp;Message</source>
         <translation>Efterprøv besked</translation>
     </message>
@@ -1563,43 +1637,61 @@ Adresse: %4
         <translation>Nulstil alle efterprøv besked-indtastningsfelter</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="+27"/>
-        <location line="+3"/>
         <source>Enter a Slothcoin address (e.g. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</source>
-        <translation>Indtast en Slothcoin-adresse (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
+        <translation type="vanished">Indtast en Slothcoin-adresse (f.eks. mXAdbKFo1vu3Svqt4fWMyZM6jQTMuBR4RG)</translation>
     </message>
     <message>
-        <location line="-2"/>
+        <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
         <translation>Klik &quot;Underskriv besked&quot; for at generere underskriften</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Enter Slothcoin signature</source>
         <translation>Indtast Slothcoin-underskriften</translation>
     </message>
     <message>
-        <location line="+82"/>
-        <location line="+81"/>
+        <location line="-6"/>
+        <source>Enter a Slothcoin address (e.g. SPf1FRfmnpKSWA6bNZ6pV9mt8mCeyL2STQ)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Click &quot;Sign Message&quot; to view public key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Enter a Slothcoin address (e.g. SA4FztWbWTJUD5CWXdfUQDocLSRjdBxwmA)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enter the public key used for signing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <location line="+85"/>
         <source>The entered address is invalid.</source>
         <translation>Den indtastede adresse er ugyldig.</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-85"/>
         <location line="+8"/>
-        <location line="+73"/>
+        <location line="+77"/>
         <location line="+8"/>
         <source>Please check the address and try again.</source>
         <translation>Tjek venligst adressen, og forsøg igen.</translation>
     </message>
     <message>
-        <location line="-81"/>
-        <location line="+81"/>
+        <location line="-85"/>
+        <location line="+85"/>
         <source>The entered address does not refer to a key.</source>
         <translation>Den indtastede adresse henviser ikke til en nøgle.</translation>
     </message>
     <message>
-        <location line="-73"/>
+        <location line="-77"/>
         <source>Wallet unlock was cancelled.</source>
         <translation>Tegnebogsoplåsning annulleret.</translation>
     </message>
@@ -1609,7 +1701,7 @@ Adresse: %4
         <translation>Den private nøgle for den indtastede adresse er ikke tilgængelig.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+15"/>
         <source>Message signing failed.</source>
         <translation>Underskrivning af besked mislykkedes.</translation>
     </message>
@@ -1619,23 +1711,45 @@ Adresse: %4
         <translation>Besked underskrevet.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+60"/>
         <source>The signature could not be decoded.</source>
         <translation>Underskriften kunne ikke afkodes.</translation>
     </message>
     <message>
         <location line="+0"/>
-        <location line="+13"/>
+        <location line="+42"/>
         <source>Please check the signature and try again.</source>
         <translation>Tjek venligst underskriften, og forsøg igen.</translation>
     </message>
     <message>
+        <location line="-26"/>
+        <source>The public key could not be decoded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+0"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <source>Please check it and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>The public key is not valid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>The public key cannot be added.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>The signature did not match the message digest.</source>
         <translation>Underskriften matcher ikke beskedens indhold.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+11"/>
         <source>Message verification failed.</source>
         <translation>Efterprøvelse af besked mislykkedes.</translation>
     </message>
@@ -1646,14 +1760,755 @@ Adresse: %4
     </message>
 </context>
 <context>
-    <name>SplashScreen</name>
+    <name>Slothcoin-core</name>
     <message>
-        <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Slothcoin developers</source>
-        <translation>Slothcoin-udviklerne</translation>
+        <location filename="../bitcoinstrings.cpp" line="+9"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=Slothcoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s &quot;Slothcoin Alert&quot; admin@foo.com
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished">Acceptable ciphers (standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished">Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv4: %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished">Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv6, falder tilbage til IPv4: %s</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished">Tildel til den givne adresse og lyt altid på den. Brug [vært]:port-notation for IPv6</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Slothcoin is probably already running.</source>
+        <translation type="unfinished">Kan ikke opnå lås på datakatalog %s. Slothcoin er sandsynligvis allerede startet.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished">Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine bitcoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine bitcoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished">Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne bitcoins!</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
+        <translation type="unfinished">Udfør kommando, når en relevant advarsel modtages (%s i kommandoen erstattes med beskeden)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished">Udfør kommando, når en transaktion i tegnebogen ændres (%s i kommandoen erstattes med TxID)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="unfinished">Udfør kommando, når den bedste blok ændres (%s i kommandoen erstattes med blokhash)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8869 or testnet: 18869)</source>
+        <translation type="unfinished">Lyt til JSON-RPC-forbindelser på &lt;port&gt; (standard: 8669 eller testnetværk: 18669) {8869 ?} {18869)?}</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished">Antal sekunder dårlige forbindelser skal vente før reetablering (standard: 86400)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished">Angiv maksimumstørrelse for høj prioritet/lavt gebyr-transaktioner i bytes (standard: 27000)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation type="unfinished">Angiv nummeret af skriptefterprøvningstråde (op til 16, 0 = automatisk, &lt;0 = efterlad det antal kerner tilgængelige, standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="unfinished">Dette er en foreløbig testudgivelse - brug på eget ansvar - brug ikke til udvinding eller handelsprogrammer</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to bind to %s on this computer. Slothcoin is probably already running.</source>
+        <translation type="unfinished">Kunne ikke tildele %s på denne computer. Slothcoin kører sikkert allerede.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">Advarsel: -paytxfee er sat meget højt! Dette er det gebyr du vil betale, hvis du sender en transaktion.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished">Advarsel: Viste transaktioner kan være ukorrekte! Du eller andre knuder kan have behov for at opgradere.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Slothcoin will not work properly.</source>
+        <translation type="unfinished">Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Slothcoin ikke fungere korrekt.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished">Advarsel: fejl under læsning af wallet.dat! Alle nøgler blev læst korrekt, men transaktionsdata eller adressebogsposter kan mangle eller være forkerte.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished">Advarsel: wallet.dat ødelagt, data reddet! Oprindelig wallet.net gemt som wallet.{timestamp}.bak i %s; hvis din saldo eller dine transaktioner er forkert, bør du genskabe fra en sikkerhedskopi.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished">Du skal angive rpcpassword=&lt;password&gt; i konfigurationsfilen:
+%s
+Hvis filen ikke eksisterer, opret den og giv ingen andre end ejeren læserettighed.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="unfinished">Accepter kommandolinje- og JSON-RPC-kommandoer</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished">Accepter forbindelser udefra (standard: 1 hvis hverken -proxy eller -connect)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="unfinished">Tilføj en knude til at forbinde til og forsøg at holde forbindelsen åben</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="unfinished">Tillad DNS-opslag for -addnode, -seednode og -connect</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished">Tillad JSON-RPC-forbindelser fra bestemt IP-adresse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished">Forsøg at genskabe private nøgler fra ødelagt wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Slothcoin version</source>
+        <translation type="unfinished">Slothcoin-version</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation type="unfinished">Blokoprettelsestilvalg:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot downgrade wallet</source>
+        <translation type="unfinished">Kan ikke nedgradere tegnebog</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished">Kan ikke finde -bind adressen: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished">Kan ikke finde -externalip adressen: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot write default address</source>
+        <translation type="unfinished">Kan ikke skrive standardadresse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished">Tilslut kun til de(n) angivne knude(r)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished">Tilslut via SOCKS-proxy</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="unfinished">Forbind til en knude for at modtage adresse, og afbryd</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Corrupted block database detected</source>
+        <translation type="unfinished">Ødelagt blokdatabase opdaget</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished">Find egen IP-adresse (standard: 1 når lytter og ingen -externalip)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="unfinished">Ønsker du at genbygge blokdatabasen nu?</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Done loading</source>
+        <translation type="unfinished">Indlæsning gennemført</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error initializing block database</source>
+        <translation type="unfinished">Klargøring af blokdatabase mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error initializing wallet database environment %s!</source>
+        <translation type="unfinished">Klargøring af tegnebogsdatabasemiljøet %s mislykkedes!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading block database</source>
+        <translation type="unfinished">Indlæsning af blokdatabase mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat</source>
+        <translation type="unfinished">Fejl ved indlæsning af wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="unfinished">Fejl ved indlæsning af wallet.dat: Tegnebog ødelagt</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of MaxCoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error opening block database</source>
+        <translation type="unfinished">Åbning af blokdatabase mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error</source>
+        <translation type="unfinished">Fejl</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Disk space is low!</source>
+        <translation type="unfinished">Fejl: Mangel på ledig diskplads!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="unfinished">Fejl: Tegnebog låst, kan ikke oprette transaktion!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: system error: </source>
+        <translation type="unfinished">Fejl: systemfejl: </translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="unfinished">Lytning på enhver port mislykkedes. Brug -listen=0, hvis du ønsker dette.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block info</source>
+        <translation type="unfinished">Læsning af blokinformation mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block</source>
+        <translation type="unfinished">Læsning af blok mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to sync block index</source>
+        <translation type="unfinished">Synkronisering af blokindeks mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished">Skrivning af blokindeks mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block info</source>
+        <translation type="unfinished">Skrivning af blokinformation mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block</source>
+        <translation type="unfinished">Skrivning af blok mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write file info</source>
+        <translation type="unfinished">Skriving af filinformation mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write to coin database</source>
+        <translation type="unfinished">Skrivning af bitcoin-database mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write transaction index</source>
+        <translation type="unfinished">Skrivning af transaktionsindeks mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write undo data</source>
+        <translation type="unfinished">Skrivning af genskabelsesdata mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished">Gebyr pr. kB, som skal tilføjes til transaktioner, du sender</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="unfinished">Find ligeværdige ved DNS-opslag (standard: 1 hvis ikke -connect)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate coins (default: 0)</source>
+        <translation type="unfinished">Generer bitcoins (standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished">Få hjælp til en kommando</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="unfinished">Antal blokke som tjekkes ved opstart (0=alle, standard: 288)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished">Grundighed af efterprøvning af blokke (0-4, standard: 3)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="unfinished">Importerer blokke fra ekstern blk000??.dat fil</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Information</source>
+        <translation type="unfinished">Information</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">Manglende dækning</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldig -proxy adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldig -tor adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldigt beløb til -minrelaytxfee=&lt;beløb&gt;:&apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldigt beløb til -mintxfee=&lt;beløb&gt;:&apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldigt beløb for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished">Ugyldigt beløb</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation type="unfinished">Liste over kommandoer</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8869 or testnet: 18869)</source>
+        <translation type="unfinished">Lyt til forbindelser på &lt;port&gt; (standard: 8669 eller testnetværk: 18669) {8869 ?} {18869)?}</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading addresses...</source>
+        <translation type="unfinished">Indlæser adresser...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading block index...</source>
+        <translation type="unfinished">Indlæser blokindeks...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading wallet...</source>
+        <translation type="unfinished">Indlæser tegnebog...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished">Vedligehold et komplet transaktionsindeks (standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished">Oprethold højest &lt;n&gt; forbindelser til andre i netværket (standard: 125)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished">Maksimum for modtagelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished">Maksimum for afsendelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 1000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Not enough file descriptors available.</source>
+        <translation type="unfinished">For få tilgængelige fildeskriptorer.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="unfinished">Accepter kun blokkæde, som matcher indbyggede kontrolposter (standard: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished">Tilslut kun til knuder i netværk &lt;net&gt; (IPv4, IPv6 eller Tor)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Options:</source>
+        <translation type="unfinished">Indstillinger:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="unfinished">Skriv ekstra fejlsøgningsinformation. Indebærer alle andre -debug* tilvalg</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished">Skriv ekstra netværksfejlsøgningsinformation</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished">Adgangskode til JSON-RPC-forbindelser</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished">Tilføj fejlsøgningsoutput med tidsstempel</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation type="unfinished">Genbyg blokkædeindeks fra nuværende blk000??.dat filer</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="unfinished">Gennemsøg blokkæden for manglende tegnebogstransaktioner</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation type="unfinished">Genindlæser...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="unfinished">Kør i baggrunden som en service, og accepter kommandoer</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished">Angiv version af SOCKS-proxyen (4-5, standard: 5)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or Slothcoind</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished">Send kommandoer til knude, der kører på &lt;ip&gt; (standard: 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="unfinished">Send sporings-/fejlsøgningsinformation til konsollen i stedet for debug.log filen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished">Send sporings-/fejlsøgningsinformation til fejlsøgningprogrammet</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="unfinished">Servercertifikat-fil (standard: server.cert)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="unfinished">Serverens private nøgle (standard: server.pem)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished">Angiv databasecachestørrelse i megabytes (standard: 25)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="unfinished">Angiv nøglepoolstørrelse til &lt;n&gt; (standard: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished">Angiv maksimumblokstørrelse i bytes (standard: 250000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished">Angiv minimumsblokstørrelse i bytes (standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set the number of threads to service RPC calls (default: 4)</source>
+        <translation type="unfinished">Angiv antallet af tråde til at håndtere RPC-kald (standard: 4)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="unfinished">Formindsk debug.log filen ved klientopstart (standard: 1 hvis ikke -debug)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Signing transaction failed</source>
+        <translation type="unfinished">Underskrift af transaktion mislykkedes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify configuration file (default: Slothcoin.conf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished">Angiv tilslutningstimeout i millisekunder (standard: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify data directory</source>
+        <translation type="unfinished">Angiv datakatalog</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify pid file (default: Slothcoind.pid)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation type="unfinished">Angiv din egen offentlige adresse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>System error: </source>
+        <translation type="unfinished">Systemfejl: </translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This help message</source>
+        <translation type="unfinished">Denne hjælpebesked</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished">Grænse for afbrydelse til dårlige forbindelser (standard: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>To use the %s option</source>
+        <translation type="unfinished">For at bruge %s mulighed</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction amount too small</source>
+        <translation type="unfinished">Transaktionsbeløb er for lavt</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction amounts must be positive</source>
+        <translation type="unfinished">Transaktionsbeløb skal være positive</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction too large</source>
+        <translation type="unfinished">Transaktionen er for stor</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="unfinished">Kunne ikke tildele %s på denne computer (bind returnerede fejl %d, %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished">Ukendt -socks proxy-version: %i</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="unfinished">Ukendt netværk anført i -onlynet: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="unfinished">Opgrader tegnebog til seneste format</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">Anvendelse:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished">Brug OpenSSL (https) for JSON-RPC-forbindelser</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished">Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished">Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 1 når lytter)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished">Brug proxy til at tilgå Tor Hidden Services (standard: som -proxy)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use the test network</source>
+        <translation type="unfinished">Brug testnetværket</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished">Brugernavn til JSON-RPC-forbindelser</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying blocks...</source>
+        <translation type="unfinished">Efterprøver blokke...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet...</source>
+        <translation type="unfinished">Efterprøver tegnebog...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Slothcoin to complete</source>
+        <translation type="unfinished">Det var nødvendigt at genskrive tegnebogen: genstart Slothcoin for at gennemføre</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Advarsel</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished">Advarsel: Denne version er forældet, opgradering påkrævet!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="unfinished">Du skal genbygge databaserne med -reindex for at ændre -txindex</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished">wallet.dat ødelagt, redning af data mislykkedes</translation>
+    </message>
+</context>
+<context>
+    <name>SplashScreen</name>
+    <message>
+        <source>The Slothcoin developers</source>
+        <translation type="vanished">Slothcoin-udviklerne</translation>
+    </message>
+    <message>
+        <location filename="../splashscreen.cpp" line="+24"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
@@ -1688,7 +2543,10 @@ Adresse: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, transmitteret igennem %n knude(r)</numerusform><numerusform>, transmitteret igennem %n knude(r)</numerusform></translation>
+        <translation>
+            <numerusform>, transmitteret igennem %n knude(r)</numerusform>
+            <numerusform>, transmitteret igennem %n knude(r)</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1696,7 +2554,7 @@ Adresse: %4
         <translation>Dato</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Source</source>
         <translation>Kilde</translation>
     </message>
@@ -1706,8 +2564,8 @@ Adresse: %4
         <translation>Genereret</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+17"/>
+        <location line="+6"/>
+        <location line="+22"/>
         <source>From</source>
         <translation>Fra</translation>
     </message>
@@ -1741,7 +2599,10 @@ Adresse: %4
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>modner efter yderligere %n blok(ke)</numerusform><numerusform>modner efter yderligere %n blok(ke)</numerusform></translation>
+        <translation>
+            <numerusform>modner efter yderligere %n blok(ke)</numerusform>
+            <numerusform>modner efter yderligere %n blok(ke)</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1817,17 +2678,20 @@ Adresse: %4
         <translation>falsk</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-216"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, er ikke blevet transmitteret endnu</translation>
     </message>
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Åben %n blok yderligere</numerusform><numerusform>Åben %n blokke yderligere</numerusform></translation>
+        <translation>
+            <numerusform>Åben %n blok yderligere</numerusform>
+            <numerusform>Åben %n blokke yderligere</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+77"/>
         <source>unknown</source>
         <translation>ukendt</translation>
     </message>
@@ -1870,7 +2734,10 @@ Adresse: %4
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Åben %n blok(ke) yderligere</numerusform><numerusform>Åben %n blok(ke) yderligere</numerusform></translation>
+        <translation>
+            <numerusform>Åben %n blok(ke) yderligere</numerusform>
+            <numerusform>Åben %n blok(ke) yderligere</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1895,7 +2762,10 @@ Adresse: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation><numerusform>Udvunden saldo, som vil være tilgængelig, når den modner efter yderligere %n blok(ke)</numerusform><numerusform>Udvunden saldo, som vil være tilgængelig, når den modner efter yderligere %n blok(ke)</numerusform></translation>
+        <translation>
+            <numerusform>Udvunden saldo, som vil være tilgængelig, når den modner efter yderligere %n blok(ke)</numerusform>
+            <numerusform>Udvunden saldo, som vil være tilgængelig, når den modner efter yderligere %n blok(ke)</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2067,7 +2937,7 @@ Adresse: %4
         <translation>Vis transaktionsdetaljer</translation>
     </message>
     <message>
-        <location line="+139"/>
+        <location line="+143"/>
         <source>Export Transaction Data</source>
         <translation>Eksporter transaktionsdata</translation>
     </message>
@@ -2143,7 +3013,7 @@ Adresse: %4
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+42"/>
+        <location filename="../walletview.cpp" line="+47"/>
         <source>&amp;Export</source>
         <translation>Eksporter</translation>
     </message>
@@ -2153,7 +3023,7 @@ Adresse: %4
         <translation>Eksportér den aktuelle visning til en fil</translation>
     </message>
     <message>
-        <location line="+193"/>
+        <location line="+201"/>
         <source>Backup Wallet</source>
         <translation>Sikkerhedskopier tegnebog</translation>
     </message>
@@ -2186,117 +3056,94 @@ Adresse: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>Slothcoin version</source>
-        <translation>Slothcoin-version</translation>
+        <translation type="vanished">Slothcoin-version</translation>
     </message>
     <message>
-        <location line="+102"/>
         <source>Usage:</source>
-        <translation>Anvendelse:</translation>
+        <translation type="vanished">Anvendelse:</translation>
     </message>
     <message>
-        <location line="-29"/>
         <source>Send command to -server or bitcoind</source>
-        <translation>Send kommando til -server eller bitcoind</translation>
+        <translation type="vanished">Send kommando til -server eller bitcoind</translation>
     </message>
     <message>
-        <location line="-23"/>
         <source>List commands</source>
-        <translation>Liste over kommandoer</translation>
+        <translation type="vanished">Liste over kommandoer</translation>
     </message>
     <message>
-        <location line="-12"/>
         <source>Get help for a command</source>
-        <translation>Få hjælp til en kommando</translation>
+        <translation type="vanished">Få hjælp til en kommando</translation>
     </message>
     <message>
-        <location line="+24"/>
         <source>Options:</source>
-        <translation>Indstillinger:</translation>
+        <translation type="vanished">Indstillinger:</translation>
     </message>
     <message>
-        <location line="+24"/>
         <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>Angiv konfigurationsfil (standard: bitcoin.conf)</translation>
+        <translation type="vanished">Angiv konfigurationsfil (standard: bitcoin.conf)</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Angiv pid-fil (default: bitcoind.pid)</translation>
+        <translation type="vanished">Angiv pid-fil (default: bitcoind.pid)</translation>
     </message>
     <message>
-        <location line="-1"/>
         <source>Specify data directory</source>
-        <translation>Angiv datakatalog</translation>
+        <translation type="vanished">Angiv datakatalog</translation>
     </message>
     <message>
-        <location line="-9"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Angiv databasecachestørrelse i megabytes (standard: 25)</translation>
+        <translation type="vanished">Angiv databasecachestørrelse i megabytes (standard: 25)</translation>
     </message>
     <message>
-        <location line="-28"/>
         <source>Listen for connections on &lt;port&gt; (default: 8669 or testnet: 18669)</source>
-        <translation>Lyt til forbindelser på &lt;port&gt; (standard: 8669 eller testnetværk: 18669)</translation>
+        <translation type="vanished">Lyt til forbindelser på &lt;port&gt; (standard: 8669 eller testnetværk: 18669)</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Oprethold højest &lt;n&gt; forbindelser til andre i netværket (standard: 125)</translation>
+        <translation type="vanished">Oprethold højest &lt;n&gt; forbindelser til andre i netværket (standard: 125)</translation>
     </message>
     <message>
-        <location line="-48"/>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Forbind til en knude for at modtage adresse, og afbryd</translation>
+        <translation type="vanished">Forbind til en knude for at modtage adresse, og afbryd</translation>
     </message>
     <message>
-        <location line="+82"/>
         <source>Specify your own public address</source>
-        <translation>Angiv din egen offentlige adresse</translation>
+        <translation type="vanished">Angiv din egen offentlige adresse</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Grænse for afbrydelse til dårlige forbindelser (standard: 100)</translation>
+        <translation type="vanished">Grænse for afbrydelse til dårlige forbindelser (standard: 100)</translation>
     </message>
     <message>
-        <location line="-134"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Antal sekunder dårlige forbindelser skal vente før reetablering (standard: 86400)</translation>
+        <translation type="vanished">Antal sekunder dårlige forbindelser skal vente før reetablering (standard: 86400)</translation>
     </message>
     <message>
-        <location line="-29"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv4: %s</translation>
+        <translation type="vanished">Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv4: %s</translation>
     </message>
     <message>
-        <location line="+27"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8669 or testnet: 18669)</source>
-        <translation>Lyt til JSON-RPC-forbindelser på &lt;port&gt; (standard: 8669 eller testnetværk: 18669)</translation>
+        <translation type="vanished">Lyt til JSON-RPC-forbindelser på &lt;port&gt; (standard: 8669 eller testnetværk: 18669)</translation>
     </message>
     <message>
-        <location line="+37"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accepter kommandolinje- og JSON-RPC-kommandoer</translation>
+        <translation type="vanished">Accepter kommandolinje- og JSON-RPC-kommandoer</translation>
     </message>
     <message>
-        <location line="+76"/>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation>Kør i baggrunden som en service, og accepter kommandoer</translation>
+        <translation type="vanished">Kør i baggrunden som en service, og accepter kommandoer</translation>
     </message>
     <message>
-        <location line="+37"/>
         <source>Use the test network</source>
-        <translation>Brug testnetværket</translation>
+        <translation type="vanished">Brug testnetværket</translation>
     </message>
     <message>
-        <location line="-112"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepter forbindelser udefra (standard: 1 hvis hverken -proxy eller -connect)</translation>
+        <translation type="vanished">Accepter forbindelser udefra (standard: 1 hvis hverken -proxy eller -connect)</translation>
     </message>
     <message>
-        <location line="-80"/>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -2308,7 +3155,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Slothcoin Alert&quot; admin@foo.com
 </source>
-        <translation>%s, du skal angive en RPC-adgangskode i konfigurationsfilen:
+        <translation type="vanished">%s, du skal angive en RPC-adgangskode i konfigurationsfilen:
 %s
 Det anbefales, at du bruger nedenstående, tilfældige adgangskode:
 rpcuser=bitcoinrpc
@@ -2321,616 +3168,494 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Slothcoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
-        <location line="+17"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv6, falder tilbage til IPv4: %s</translation>
+        <translation type="vanished">Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv6, falder tilbage til IPv4: %s</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Tildel til den givne adresse og lyt altid på den. Brug [vært]:port-notation for IPv6</translation>
+        <translation type="vanished">Tildel til den givne adresse og lyt altid på den. Brug [vært]:port-notation for IPv6</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. Slothcoin is probably already running.</source>
-        <translation>Kan ikke opnå lås på datakatalog %s. Slothcoin er sandsynligvis allerede startet.</translation>
+        <translation type="vanished">Kan ikke opnå lås på datakatalog %s. Slothcoin er sandsynligvis allerede startet.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine bitcoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine bitcoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation type="vanished">Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine bitcoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine bitcoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
     <message>
-        <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne bitcoins!</translation>
+        <translation type="vanished">Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne bitcoins!</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
-        <translation>Udfør kommando, når en relevant advarsel modtages (%s i kommandoen erstattes med beskeden)</translation>
+        <translation type="vanished">Udfør kommando, når en relevant advarsel modtages (%s i kommandoen erstattes med beskeden)</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Udfør kommando, når en transaktion i tegnebogen ændres (%s i kommandoen erstattes med TxID)</translation>
+        <translation type="vanished">Udfør kommando, når en transaktion i tegnebogen ændres (%s i kommandoen erstattes med TxID)</translation>
     </message>
     <message>
-        <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation>Angiv maksimumstørrelse for høj prioritet/lavt gebyr-transaktioner i bytes (standard: 27000)</translation>
+        <translation type="vanished">Angiv maksimumstørrelse for høj prioritet/lavt gebyr-transaktioner i bytes (standard: 27000)</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Dette er en foreløbig testudgivelse - brug på eget ansvar - brug ikke til udvinding eller handelsprogrammer</translation>
+        <translation type="vanished">Dette er en foreløbig testudgivelse - brug på eget ansvar - brug ikke til udvinding eller handelsprogrammer</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Advarsel: -paytxfee er sat meget højt! Dette er det gebyr du vil betale, hvis du sender en transaktion.</translation>
+        <translation type="vanished">Advarsel: -paytxfee er sat meget højt! Dette er det gebyr du vil betale, hvis du sender en transaktion.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Advarsel: Viste transaktioner kan være ukorrekte! Du eller andre knuder kan have behov for at opgradere.</translation>
+        <translation type="vanished">Advarsel: Viste transaktioner kan være ukorrekte! Du eller andre knuder kan have behov for at opgradere.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Slothcoin will not work properly.</source>
-        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Slothcoin ikke fungere korrekt.</translation>
+        <translation type="vanished">Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Slothcoin ikke fungere korrekt.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Advarsel: fejl under læsning af wallet.dat! Alle nøgler blev læst korrekt, men transaktionsdata eller adressebogsposter kan mangle eller være forkerte.</translation>
+        <translation type="vanished">Advarsel: fejl under læsning af wallet.dat! Alle nøgler blev læst korrekt, men transaktionsdata eller adressebogsposter kan mangle eller være forkerte.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Advarsel: wallet.dat ødelagt, data reddet! Oprindelig wallet.net gemt som wallet.{timestamp}.bak i %s; hvis din saldo eller dine transaktioner er forkert, bør du genskabe fra en sikkerhedskopi.</translation>
+        <translation type="vanished">Advarsel: wallet.dat ødelagt, data reddet! Oprindelig wallet.net gemt som wallet.{timestamp}.bak i %s; hvis din saldo eller dine transaktioner er forkert, bør du genskabe fra en sikkerhedskopi.</translation>
     </message>
     <message>
-        <location line="+14"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Forsøg at genskabe private nøgler fra ødelagt wallet.dat</translation>
+        <translation type="vanished">Forsøg at genskabe private nøgler fra ødelagt wallet.dat</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Block creation options:</source>
-        <translation>Blokoprettelsestilvalg:</translation>
+        <translation type="vanished">Blokoprettelsestilvalg:</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>Connect only to the specified node(s)</source>
-        <translation>Tilslut kun til de(n) angivne knude(r)</translation>
+        <translation type="vanished">Tilslut kun til de(n) angivne knude(r)</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Corrupted block database detected</source>
-        <translation>Ødelagt blokdatabase opdaget</translation>
+        <translation type="vanished">Ødelagt blokdatabase opdaget</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Find egen IP-adresse (standard: 1 når lytter og ingen -externalip)</translation>
+        <translation type="vanished">Find egen IP-adresse (standard: 1 når lytter og ingen -externalip)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Ønsker du at genbygge blokdatabasen nu?</translation>
+        <translation type="vanished">Ønsker du at genbygge blokdatabasen nu?</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Error initializing block database</source>
-        <translation>Klargøring af blokdatabase mislykkedes</translation>
+        <translation type="vanished">Klargøring af blokdatabase mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Klargøring af tegnebogsdatabasemiljøet %s mislykkedes!</translation>
+        <translation type="vanished">Klargøring af tegnebogsdatabasemiljøet %s mislykkedes!</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Error loading block database</source>
-        <translation>Indlæsning af blokdatabase mislykkedes</translation>
+        <translation type="vanished">Indlæsning af blokdatabase mislykkedes</translation>
     </message>
     <message>
-        <location line="+4"/>
         <source>Error opening block database</source>
-        <translation>Åbning af blokdatabase mislykkedes</translation>
+        <translation type="vanished">Åbning af blokdatabase mislykkedes</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Error: Disk space is low!</source>
-        <translation>Fejl: Mangel på ledig diskplads!</translation>
+        <translation type="vanished">Fejl: Mangel på ledig diskplads!</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Fejl: Tegnebog låst, kan ikke oprette transaktion!</translation>
+        <translation type="vanished">Fejl: Tegnebog låst, kan ikke oprette transaktion!</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Error: system error: </source>
-        <translation>Fejl: systemfejl: </translation>
+        <translation type="vanished">Fejl: systemfejl: </translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Lytning på enhver port mislykkedes. Brug -listen=0, hvis du ønsker dette.</translation>
+        <translation type="vanished">Lytning på enhver port mislykkedes. Brug -listen=0, hvis du ønsker dette.</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to read block info</source>
-        <translation>Læsning af blokinformation mislykkedes</translation>
+        <translation type="vanished">Læsning af blokinformation mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to read block</source>
-        <translation>Læsning af blok mislykkedes</translation>
+        <translation type="vanished">Læsning af blok mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to sync block index</source>
-        <translation>Synkronisering af blokindeks mislykkedes</translation>
+        <translation type="vanished">Synkronisering af blokindeks mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write block index</source>
-        <translation>Skrivning af blokindeks mislykkedes</translation>
+        <translation type="vanished">Skrivning af blokindeks mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write block info</source>
-        <translation>Skrivning af blokinformation mislykkedes</translation>
+        <translation type="vanished">Skrivning af blokinformation mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write block</source>
-        <translation>Skrivning af blok mislykkedes</translation>
+        <translation type="vanished">Skrivning af blok mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write file info</source>
-        <translation>Skriving af filinformation mislykkedes</translation>
+        <translation type="vanished">Skriving af filinformation mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Skrivning af bitcoin-database mislykkedes</translation>
+        <translation type="vanished">Skrivning af bitcoin-database mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write transaction index</source>
-        <translation>Skrivning af transaktionsindeks mislykkedes</translation>
+        <translation type="vanished">Skrivning af transaktionsindeks mislykkedes</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Failed to write undo data</source>
-        <translation>Skrivning af genskabelsesdata mislykkedes</translation>
+        <translation type="vanished">Skrivning af genskabelsesdata mislykkedes</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Find ligeværdige ved DNS-opslag (standard: 1 hvis ikke -connect)</translation>
+        <translation type="vanished">Find ligeværdige ved DNS-opslag (standard: 1 hvis ikke -connect)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation>Generer bitcoins (standard: 0)</translation>
+        <translation type="vanished">Generer bitcoins (standard: 0)</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Antal blokke som tjekkes ved opstart (0=alle, standard: 288)</translation>
+        <translation type="vanished">Antal blokke som tjekkes ved opstart (0=alle, standard: 288)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
-        <translation>Grundighed af efterprøvning af blokke (0-4, standard: 3)</translation>
+        <translation type="vanished">Grundighed af efterprøvning af blokke (0-4, standard: 3)</translation>
     </message>
     <message>
-        <location line="+19"/>
         <source>Not enough file descriptors available.</source>
-        <translation>For få tilgængelige fildeskriptorer.</translation>
+        <translation type="vanished">For få tilgængelige fildeskriptorer.</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Genbyg blokkædeindeks fra nuværende blk000??.dat filer</translation>
+        <translation type="vanished">Genbyg blokkædeindeks fra nuværende blk000??.dat filer</translation>
     </message>
     <message>
-        <location line="+16"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Angiv antallet af tråde til at håndtere RPC-kald (standard: 4)</translation>
+        <translation type="vanished">Angiv antallet af tråde til at håndtere RPC-kald (standard: 4)</translation>
     </message>
     <message>
-        <location line="+26"/>
         <source>Verifying blocks...</source>
-        <translation>Efterprøver blokke...</translation>
+        <translation type="vanished">Efterprøver blokke...</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Verifying wallet...</source>
-        <translation>Efterprøver tegnebog...</translation>
+        <translation type="vanished">Efterprøver tegnebog...</translation>
     </message>
     <message>
-        <location line="-69"/>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importerer blokke fra ekstern blk000??.dat fil</translation>
+        <translation type="vanished">Importerer blokke fra ekstern blk000??.dat fil</translation>
     </message>
     <message>
-        <location line="-76"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
-        <translation>Angiv nummeret af skriptefterprøvningstråde (op til 16, 0 = automatisk, &lt;0 = efterlad det antal kerner tilgængelige, standard: 0)</translation>
+        <translation type="vanished">Angiv nummeret af skriptefterprøvningstråde (op til 16, 0 = automatisk, &lt;0 = efterlad det antal kerner tilgængelige, standard: 0)</translation>
     </message>
     <message>
-        <location line="+77"/>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation type="vanished">Information</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation>Ugyldig -tor adresse: &apos;%s&apos;</translation>
+        <translation type="vanished">Ugyldig -tor adresse: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ugyldigt beløb til -minrelaytxfee=&lt;beløb&gt;:&apos;%s&apos;</translation>
+        <translation type="vanished">Ugyldigt beløb til -minrelaytxfee=&lt;beløb&gt;:&apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ugyldigt beløb til -mintxfee=&lt;beløb&gt;:&apos;%s&apos;</translation>
+        <translation type="vanished">Ugyldigt beløb til -mintxfee=&lt;beløb&gt;:&apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Vedligehold et komplet transaktionsindeks (standard: 0)</translation>
+        <translation type="vanished">Vedligehold et komplet transaktionsindeks (standard: 0)</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maksimum for modtagelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 5000)</translation>
+        <translation type="vanished">Maksimum for modtagelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 5000)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maksimum for afsendelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 1000)</translation>
+        <translation type="vanished">Maksimum for afsendelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 1000)</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Accepter kun blokkæde, som matcher indbyggede kontrolposter (standard: 1)</translation>
+        <translation type="vanished">Accepter kun blokkæde, som matcher indbyggede kontrolposter (standard: 1)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Tilslut kun til knuder i netværk &lt;net&gt; (IPv4, IPv6 eller Tor)</translation>
+        <translation type="vanished">Tilslut kun til knuder i netværk &lt;net&gt; (IPv4, IPv6 eller Tor)</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation>Skriv ekstra fejlsøgningsinformation. Indebærer alle andre -debug* tilvalg</translation>
+        <translation type="vanished">Skriv ekstra fejlsøgningsinformation. Indebærer alle andre -debug* tilvalg</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Output extra network debugging information</source>
-        <translation>Skriv ekstra netværksfejlsøgningsinformation</translation>
+        <translation type="vanished">Skriv ekstra netværksfejlsøgningsinformation</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
-        <translation>Tilføj fejlsøgningsoutput med tidsstempel</translation>
+        <translation type="vanished">Tilføj fejlsøgningsoutput med tidsstempel</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>SSL options: (see the Slothcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-indstillinger: (se Slothcoin Wiki for SSL-opsætningsinstruktioner)</translation>
+        <translation type="vanished">SSL-indstillinger: (se Slothcoin Wiki for SSL-opsætningsinstruktioner)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation>Angiv version af SOCKS-proxyen (4-5, standard: 5)</translation>
+        <translation type="vanished">Angiv version af SOCKS-proxyen (4-5, standard: 5)</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Send sporings-/fejlsøgningsinformation til konsollen i stedet for debug.log filen</translation>
+        <translation type="vanished">Send sporings-/fejlsøgningsinformation til konsollen i stedet for debug.log filen</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
-        <translation>Send sporings-/fejlsøgningsinformation til fejlsøgningprogrammet</translation>
+        <translation type="vanished">Send sporings-/fejlsøgningsinformation til fejlsøgningprogrammet</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation>Angiv maksimumblokstørrelse i bytes (standard: 250000)</translation>
+        <translation type="vanished">Angiv maksimumblokstørrelse i bytes (standard: 250000)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Angiv minimumsblokstørrelse i bytes (standard: 0)</translation>
+        <translation type="vanished">Angiv minimumsblokstørrelse i bytes (standard: 0)</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Formindsk debug.log filen ved klientopstart (standard: 1 hvis ikke -debug)</translation>
+        <translation type="vanished">Formindsk debug.log filen ved klientopstart (standard: 1 hvis ikke -debug)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Signing transaction failed</source>
-        <translation>Underskrift af transaktion mislykkedes</translation>
+        <translation type="vanished">Underskrift af transaktion mislykkedes</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Angiv tilslutningstimeout i millisekunder (standard: 5000)</translation>
+        <translation type="vanished">Angiv tilslutningstimeout i millisekunder (standard: 5000)</translation>
     </message>
     <message>
-        <location line="+4"/>
         <source>System error: </source>
-        <translation>Systemfejl: </translation>
+        <translation type="vanished">Systemfejl: </translation>
     </message>
     <message>
-        <location line="+4"/>
         <source>Transaction amount too small</source>
-        <translation>Transaktionsbeløb er for lavt</translation>
+        <translation type="vanished">Transaktionsbeløb er for lavt</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Transaction amounts must be positive</source>
-        <translation>Transaktionsbeløb skal være positive</translation>
+        <translation type="vanished">Transaktionsbeløb skal være positive</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Transaction too large</source>
-        <translation>Transaktionen er for stor</translation>
+        <translation type="vanished">Transaktionen er for stor</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 0)</translation>
+        <translation type="vanished">Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 0)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 1 når lytter)</translation>
+        <translation type="vanished">Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 1 når lytter)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation>Brug proxy til at tilgå Tor Hidden Services (standard: som -proxy)</translation>
+        <translation type="vanished">Brug proxy til at tilgå Tor Hidden Services (standard: som -proxy)</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
-        <translation>Brugernavn til JSON-RPC-forbindelser</translation>
+        <translation type="vanished">Brugernavn til JSON-RPC-forbindelser</translation>
     </message>
     <message>
-        <location line="+4"/>
         <source>Warning</source>
-        <translation>Advarsel</translation>
+        <translation type="vanished">Advarsel</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Advarsel: Denne version er forældet, opgradering påkrævet!</translation>
+        <translation type="vanished">Advarsel: Denne version er forældet, opgradering påkrævet!</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
-        <translation>Du skal genbygge databaserne med -reindex for at ændre -txindex</translation>
+        <translation type="vanished">Du skal genbygge databaserne med -reindex for at ændre -txindex</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat ødelagt, redning af data mislykkedes</translation>
+        <translation type="vanished">wallet.dat ødelagt, redning af data mislykkedes</translation>
     </message>
     <message>
-        <location line="-50"/>
         <source>Password for JSON-RPC connections</source>
-        <translation>Adgangskode til JSON-RPC-forbindelser</translation>
+        <translation type="vanished">Adgangskode til JSON-RPC-forbindelser</translation>
     </message>
     <message>
-        <location line="-67"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Tillad JSON-RPC-forbindelser fra bestemt IP-adresse</translation>
+        <translation type="vanished">Tillad JSON-RPC-forbindelser fra bestemt IP-adresse</translation>
     </message>
     <message>
-        <location line="+76"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Send kommandoer til knude, der kører på &lt;ip&gt; (standard: 127.0.0.1)</translation>
+        <translation type="vanished">Send kommandoer til knude, der kører på &lt;ip&gt; (standard: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Udfør kommando, når den bedste blok ændres (%s i kommandoen erstattes med blokhash)</translation>
+        <translation type="vanished">Udfør kommando, når den bedste blok ændres (%s i kommandoen erstattes med blokhash)</translation>
     </message>
     <message>
-        <location line="+147"/>
         <source>Upgrade wallet to latest format</source>
-        <translation>Opgrader tegnebog til seneste format</translation>
+        <translation type="vanished">Opgrader tegnebog til seneste format</translation>
     </message>
     <message>
-        <location line="-21"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Angiv nøglepoolstørrelse til &lt;n&gt; (standard: 100)</translation>
+        <translation type="vanished">Angiv nøglepoolstørrelse til &lt;n&gt; (standard: 100)</translation>
     </message>
     <message>
-        <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Gennemsøg blokkæden for manglende tegnebogstransaktioner</translation>
+        <translation type="vanished">Gennemsøg blokkæden for manglende tegnebogstransaktioner</translation>
     </message>
     <message>
-        <location line="+35"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Brug OpenSSL (https) for JSON-RPC-forbindelser</translation>
+        <translation type="vanished">Brug OpenSSL (https) for JSON-RPC-forbindelser</translation>
     </message>
     <message>
-        <location line="-26"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Servercertifikat-fil (standard: server.cert)</translation>
+        <translation type="vanished">Servercertifikat-fil (standard: server.cert)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation>Serverens private nøgle (standard: server.pem)</translation>
+        <translation type="vanished">Serverens private nøgle (standard: server.pem)</translation>
     </message>
     <message>
-        <location line="-151"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation>Acceptable ciphers (standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+        <translation type="vanished">Acceptable ciphers (standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+165"/>
         <source>This help message</source>
-        <translation>Denne hjælpebesked</translation>
+        <translation type="vanished">Denne hjælpebesked</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Kunne ikke tildele %s på denne computer (bind returnerede fejl %d, %s)</translation>
+        <translation type="vanished">Kunne ikke tildele %s på denne computer (bind returnerede fejl %d, %s)</translation>
     </message>
     <message>
-        <location line="-91"/>
         <source>Connect through socks proxy</source>
-        <translation>Tilslut via SOCKS-proxy</translation>
+        <translation type="vanished">Tilslut via SOCKS-proxy</translation>
     </message>
     <message>
-        <location line="-10"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Tillad DNS-opslag for -addnode, -seednode og -connect</translation>
+        <translation type="vanished">Tillad DNS-opslag for -addnode, -seednode og -connect</translation>
     </message>
     <message>
-        <location line="+55"/>
         <source>Loading addresses...</source>
-        <translation>Indlæser adresser...</translation>
+        <translation type="vanished">Indlæser adresser...</translation>
     </message>
     <message>
-        <location line="-35"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog ødelagt</translation>
+        <translation type="vanished">Fejl ved indlæsning af wallet.dat: Tegnebog ødelagt</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Slothcoin</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af Slothcoin</translation>
+        <translation type="vanished">Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af Slothcoin</translation>
     </message>
     <message>
-        <location line="+93"/>
         <source>Wallet needed to be rewritten: restart Slothcoin to complete</source>
-        <translation>Det var nødvendigt at genskrive tegnebogen: genstart Slothcoin for at gennemføre</translation>
+        <translation type="vanished">Det var nødvendigt at genskrive tegnebogen: genstart Slothcoin for at gennemføre</translation>
     </message>
     <message>
-        <location line="-95"/>
         <source>Error loading wallet.dat</source>
-        <translation>Fejl ved indlæsning af wallet.dat</translation>
+        <translation type="vanished">Fejl ved indlæsning af wallet.dat</translation>
     </message>
     <message>
-        <location line="+28"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Ugyldig -proxy adresse: &apos;%s&apos;</translation>
+        <translation type="vanished">Ugyldig -proxy adresse: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+56"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Ukendt netværk anført i -onlynet: &apos;%s&apos;</translation>
+        <translation type="vanished">Ukendt netværk anført i -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-1"/>
         <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Ukendt -socks proxy-version: %i</translation>
+        <translation type="vanished">Ukendt -socks proxy-version: %i</translation>
     </message>
     <message>
-        <location line="-96"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Kan ikke finde -bind adressen: &apos;%s&apos;</translation>
+        <translation type="vanished">Kan ikke finde -bind adressen: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Kan ikke finde -externalip adressen: &apos;%s&apos;</translation>
+        <translation type="vanished">Kan ikke finde -externalip adressen: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+44"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ugyldigt beløb for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <translation type="vanished">Ugyldigt beløb for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Invalid amount</source>
-        <translation>Ugyldigt beløb</translation>
+        <translation type="vanished">Ugyldigt beløb</translation>
     </message>
     <message>
-        <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Manglende dækning</translation>
+        <translation type="vanished">Manglende dækning</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Loading block index...</source>
-        <translation>Indlæser blokindeks...</translation>
+        <translation type="vanished">Indlæser blokindeks...</translation>
     </message>
     <message>
-        <location line="-57"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Tilføj en knude til at forbinde til og forsøg at holde forbindelsen åben</translation>
+        <translation type="vanished">Tilføj en knude til at forbinde til og forsøg at holde forbindelsen åben</translation>
     </message>
     <message>
-        <location line="-25"/>
         <source>Unable to bind to %s on this computer. Slothcoin is probably already running.</source>
-        <translation>Kunne ikke tildele %s på denne computer. Slothcoin kører sikkert allerede.</translation>
+        <translation type="vanished">Kunne ikke tildele %s på denne computer. Slothcoin kører sikkert allerede.</translation>
     </message>
     <message>
-        <location line="+64"/>
         <source>Fee per KB to add to transactions you send</source>
-        <translation>Gebyr pr. kB, som skal tilføjes til transaktioner, du sender</translation>
+        <translation type="vanished">Gebyr pr. kB, som skal tilføjes til transaktioner, du sender</translation>
     </message>
     <message>
-        <location line="+19"/>
         <source>Loading wallet...</source>
-        <translation>Indlæser tegnebog...</translation>
+        <translation type="vanished">Indlæser tegnebog...</translation>
     </message>
     <message>
-        <location line="-52"/>
         <source>Cannot downgrade wallet</source>
-        <translation>Kan ikke nedgradere tegnebog</translation>
+        <translation type="vanished">Kan ikke nedgradere tegnebog</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Cannot write default address</source>
-        <translation>Kan ikke skrive standardadresse</translation>
+        <translation type="vanished">Kan ikke skrive standardadresse</translation>
     </message>
     <message>
-        <location line="+64"/>
         <source>Rescanning...</source>
-        <translation>Genindlæser...</translation>
+        <translation type="vanished">Genindlæser...</translation>
     </message>
     <message>
-        <location line="-57"/>
         <source>Done loading</source>
-        <translation>Indlæsning gennemført</translation>
+        <translation type="vanished">Indlæsning gennemført</translation>
     </message>
     <message>
-        <location line="+82"/>
         <source>To use the %s option</source>
-        <translation>For at bruge %s mulighed</translation>
+        <translation type="vanished">For at bruge %s mulighed</translation>
     </message>
     <message>
-        <location line="-74"/>
         <source>Error</source>
-        <translation>Fejl</translation>
+        <translation type="vanished">Fejl</translation>
     </message>
     <message>
-        <location line="-31"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Du skal angive rpcpassword=&lt;password&gt; i konfigurationsfilen:
+        <translation type="vanished">Du skal angive rpcpassword=&lt;password&gt; i konfigurationsfilen:
 %s
 Hvis filen ikke eksisterer, opret den og giv ingen andre end ejeren læserettighed.</translation>
     </message>

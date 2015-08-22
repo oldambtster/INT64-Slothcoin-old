@@ -3,7 +3,7 @@
 
 //
 // This class handles payment requests from clicking on
-// SlothCoin: URIs
+// Slothcoin: URIs
 //
 // This is somewhat tricky, because we have to deal with
 // the situation where the user clicks on a link during

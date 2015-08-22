@@ -22,7 +22,7 @@ public:
     qint64 amount;
 };
 
-/** Interface to SlothCoin wallet from Qt view code. */
+/** Interface to Slothcoin wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

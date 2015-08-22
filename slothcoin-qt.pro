@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = Slothcoin-Qt
 macx:TARGET = "Slothcoin-Qt"
-VERSION = 1.0.0
+VERSION = 1.3.1.1
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -19,17 +19,17 @@ CONFIG += static
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
-
-BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
-BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
-BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
-BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
-BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1e/include
-OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1e
-MINIUPNPC_INCLUDE_PATH=C:/deps/
-MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-
+win32{
+    BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
+    BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
+    BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+    BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
+    BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
+    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1e/include
+    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1e
+    MINIUPNPC_INCLUDE_PATH=C:/deps/
+    MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+}
 OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
@@ -60,7 +60,15 @@ QMAKE_CXXFLAGS *= -D_FORTIFY_SOURCE=2
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
 win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
-
+win32{
+    USE_QRCODE=1
+}
+linux{
+    USE_QRCODE=1
+}
+macx{
+    USE_QRCODE=1
+}
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
 contains(USE_QRCODE, 1) {
@@ -68,7 +76,15 @@ contains(USE_QRCODE, 1) {
     DEFINES += USE_QRCODE
     LIBS += -lqrencode
 }
-
+win32{
+    USE_UPNP=1
+}
+linux{
+    USE_UPNP=-
+}
+macx{
+    USE_UPNP=-
+}
 # use: qmake "USE_UPNP=1" ( enabled by default; default)
 #  or: qmake "USE_UPNP=0" (disabled by default)
 #  or: qmake "USE_UPNP=-" (not supported)
@@ -85,14 +101,24 @@ contains(USE_UPNP, -) {
     LIBS += $$join(MINIUPNPC_LIB_PATH,,-L,) -lminiupnpc
     win32:LIBS += -liphlpapi
 }
-
+linux{
+    USE_DBUS=1
+}
 # use: qmake "USE_DBUS=1"
 contains(USE_DBUS, 1) {
     message(Building with DBUS (Freedesktop notifications) support)
     DEFINES += USE_DBUS
     QT += dbus
 }
-
+win32{
+    USE_IPV6=-
+}
+linux{
+    USE_IPV6=1
+}
+macx{
+    USE_IPV6=1
+}
 # use: qmake "USE_IPV6=1" ( enabled by default; default)
 #  or: qmake "USE_IPV6=0" (disabled by default)
 #  or: qmake "USE_IPV6=-" (not supported)
@@ -103,6 +129,7 @@ contains(USE_IPV6, -) {
         USE_IPV6=1
     }
     DEFINES += USE_IPV6=$$USE_IPV6
+    message(Building with IPv6 support)
 }
 
 contains(BITCOIN_NEED_QT_PLUGINS, 1) {

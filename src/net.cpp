@@ -1182,7 +1182,7 @@ void MapPort(bool)
 
 
 
-
+// 20150821 1105 CET Oldambtster: Added some active peers
 
 
 
@@ -1191,6 +1191,14 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
+    {"31.28.12.26", "31.28.12.26"},
+    {"87.208.30.94", "87.208.30.94"},
+    {"54.164.183.564", "54.164.183.56"},
+    {"91.122.16.43", "91.122.16.43"},
+    {"91.155.235.8", "91.155.235.8"},
+    {"95.55.24.8", "95.55.24.8"},
+    {"162.255.117.105", "162.255.117.105"},
+    {"188.134.72.213", "188.134.72.213"},
     {"80.112.144.84", "80.112.144.84"},
 	{"82.139.127.205", "82.139.127.205"},
 	{"188.226.214.24", "188.226.214.24"},
@@ -1199,8 +1207,18 @@ static const char *strMainNetDNSSeed[][2] = {
 };
 
 static const char *strTestNetDNSSeed[][2] = {
+    {"31.28.12.26", "31.28.12.26"},
+    {"87.208.30.94", "87.208.30.94"},
+    {"54.164.183.564", "54.164.183.56"},
+    {"91.122.16.43", "91.122.16.43"},
+    {"91.155.235.8", "91.155.235.8"},
+    {"95.55.24.8", "95.55.24.8"},
+    {"162.255.117.105", "162.255.117.105"},
+    {"188.134.72.213", "188.134.72.213"},
     {"80.112.144.84", "80.112.144.84"},
-	{"82.139.127.205", "82.139.127.205"},
+    {"82.139.127.205", "82.139.127.205"},
+    {"188.226.214.24", "188.226.214.24"},
+    {"162.244.25.168", "162.244.25.168"},
 	{NULL, NULL}
 };
 
@@ -1756,7 +1774,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. SlothCoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Slothcoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());

@@ -155,7 +155,7 @@
          <item>
           <widget class="QPushButton" name="signMessageButton_SM">
            <property name="toolTip">
-            <string>Sign the message to prove you own this SlothCoin address</string>
+            <string>Sign the message to prove you own this Slothcoin address</string>
            </property>
            <property name="text">
             <string>Sign &amp;Message</string>
@@ -311,7 +311,7 @@
          <item>
           <widget class="QPushButton" name="verifyMessageButton_VM">
            <property name="toolTip">
-            <string>Verify the message to ensure it was signed with the specified SlothCoin address</string>
+            <string>Verify the message to ensure it was signed with the specified Slothcoin address</string>
            </property>
            <property name="text">
             <string>Verify &amp;Message</string>

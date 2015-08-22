@@ -30,14 +30,14 @@ bool BitcoinUnits::valid(int unit)
         return false;
     }
 }
-
+// 20150821 1102 CET Oldambtster: Changed Sloth to SLOTH
 QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Sloth");
-    case mBTC: return QString("mSloth");
-    case uBTC: return QString::fromUtf8("μSloth");
+    case BTC: return QString("SLOTH");
+    case mBTC: return QString("mSLOTH");
+    case uBTC: return QString::fromUtf8("μSLOTH");
     default: return QString("???");
     }
 }
@@ -46,9 +46,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Sloth");
-    case mBTC: return QString("Milli-Sloth (1 / 1,000)");
-    case uBTC: return QString("Micro-Sloth (1 / 1,000,000)");
+    case BTC: return QString("SLOTH");
+    case mBTC: return QString("Milli-SLOTH (1 / 1,000)");
+    case uBTC: return QString("Micro-SLOTH (1 / 1,000,000)");
     default: return QString("???");
     }
 }
