@@ -1130,21 +1130,23 @@ int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
     {
             nSubsidy = 10000 * COIN;
         }
-    else if(nHeight < 305000)
+// 20150825 2134 CET Oldambtster: adjust miscalc. minus 180 blocks * 5000 * COIN
+    else if(nHeight < 304820)
     {
             nSubsidy = 5000 * COIN;
         }
-    else if(nHeight < 1229765)
+    else if(nHeight < 1229585)
     {
             nSubsidy = 4321 * COIN;
         }
-    else if(nHeight < 1230567)
+    else if(nHeight < 1230387)
     {
             nSubsidy = 1 * COIN;
         }
 
     return nSubsidy + nFees;
 }
+// Last paying block 1230386 ; Subsidy = 0 starting block 1230387
 
 // Forking from 60 seconds blocktime to 150 seconds
 // Difficulty retargeting be every 2 blocks or 5 minutes

@@ -49,6 +49,7 @@ QString BitcoinUnits::description(int unit)
     case BTC: return QString("SLOTH");
     case mBTC: return QString("Milli-SLOTH (1 / 1,000)");
     case uBTC: return QString("Micro-SLOTH (1 / 1,000,000)");
+        // 20150825 2219 CET Oldambtster: suggesting for future use rBTC "Real-SLOTH (1/100,000)"
     default: return QString("???");
     }
 }
