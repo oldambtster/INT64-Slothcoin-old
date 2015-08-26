@@ -23,7 +23,7 @@ Shortly after the year 2020 POW mining will stop.
 	100000 ..   199999   100K *      250000 =	25.000.000.000
 	200000 ..   299999   100K *      125000	=	12.500.000.000
 
-Here rewards needed to be changed. Or else it would go way over the MAX_COIN(int64)
+Here rewards change. So it will stay within MAX_COIN(int64) limits.
 
         300000 ..   300099    100 *     1000000 =	   100.000.000
         300100 ..   300299    200 *      500000	=	   100.000.000
