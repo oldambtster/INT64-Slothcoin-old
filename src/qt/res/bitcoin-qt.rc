@@ -1,5 +1,5 @@
-IDI_ICON1 ICON DISCARDABLE "icons/Slothcoin1_32.ico"
-IDI_ICON2 ICON DISCARDABLE "icons/Slothcoin1_32_testnet.ico"
+IDI_ICON1 ICON DISCARDABLE "icons/slothcoin_32.ico"
+IDI_ICON2 ICON DISCARDABLE "icons/slothcoin_32_testnet.ico"
 
 #include <windows.h>             // needed for VERSIONINFO
 #include "../../clientversion.h" // holds the needed client version information
