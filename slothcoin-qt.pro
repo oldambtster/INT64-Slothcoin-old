@@ -15,7 +15,7 @@ CONFIG += static
 # for boost thread win32 with _win32 sufix
 # use: BOOST_THREAD_LIB_SUFFIX=_win32-...
 # or when linking against a specific BerkelyDB version: BDB_LIB_SUFFIX=-4.8
-
+# 20150827 1750 CET Oldambtster Commented out QR code for win32 and MINIUPNPC for win32
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
@@ -27,8 +27,8 @@ win32{
     BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
     OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1e/include
     OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1e
-    MINIUPNPC_INCLUDE_PATH=C:/deps/
-    MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+    #MINIUPNPC_INCLUDE_PATH=C:/deps/
+    #MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
 }
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -46,7 +46,7 @@ contains(RELEASE, 1) {
         LIBS += -Wl,-Bstatic -Wl,-z,relro -Wl,-z,now
     }
 }
-
+# commented QR code for windows and turned miniupnp off
 !win32 {
     # for extra security against potential buffer overflows: enable GCCs Stack Smashing Protection
     QMAKE_CXXFLAGS *= -fstack-protector-all
@@ -60,9 +60,9 @@ QMAKE_CXXFLAGS *= -D_FORTIFY_SOURCE=2
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
 win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
-win32{
-    USE_QRCODE=1
-}
+#win32{
+#    USE_QRCODE=1
+#}
 linux{
     USE_QRCODE=1
 }
@@ -77,7 +77,7 @@ contains(USE_QRCODE, 1) {
     LIBS += -lqrencode
 }
 win32{
-    USE_UPNP=1
+    USE_UPNP=-
 }
 linux{
     USE_UPNP=-
