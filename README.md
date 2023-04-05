@@ -1,6 +1,7 @@
+[Old and probably unsafe code, therefore archived.] 
+
 Slothcoin aka SLOTH
 ===================
-   www.slick.cf/coin/sloth
 
 Technical Information version 1.3.1 [build 3]
 
@@ -48,4 +49,4 @@ To round it off				++	=	92.233.719.565
 License
 
 Slothcoin is released under the terms of the MIT license. See `COPYING` for more
-information or see http://opensource.org/licenses/MIT.
+information or see http://opensource.org/licenses/MIT. 
